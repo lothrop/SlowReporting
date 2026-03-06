@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SlowReporting.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Button
+                x:Name="ExportReport1Btn"
+                Text="Show Report with label"
+                Clicked="OnReport1Clicked"
+                HorizontalOptions="Fill" />
+
+            <Button
+                x:Name="ExportReport2Btn"
+                Text="Show Report without label"
+                Clicked="OnReport2Clicked"
+                HorizontalOptions="Fill" />
+
+            <Image
+                x:Name="ReportImage"
+                Aspect="AspectFit"
+                HeightRequest="300" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
